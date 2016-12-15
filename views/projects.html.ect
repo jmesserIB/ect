@@ -1,0 +1,18 @@
+<% if @projects1.length: %>
+  <style>table, th, td {border: 1px solid black;}</style>
+  <table style="width:100%">
+    <tr>
+      <th>name</th>
+      <th>url</th>
+      <th>description</th>
+    </tr>
+<% for project in @projects1: %>
+    <tr>
+      <td><%= project.name%></td>
+      <td><%= project.balance%></td>
+      <td><%= project.company%></td>
+<% end %>
+  </table>
+<% else: %>
+No projects
+<% end %>

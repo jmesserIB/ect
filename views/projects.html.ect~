@@ -1,0 +1,10 @@
+<% if @projects1.length: %>
+  <% for project in @projects1: %>
+    <span title="<%= project.description %>">
+    <a href="<%= project.url %>"><%= project.name %></a>
+    </span>
+    <br>
+  <% end %>
+<% else: %>
+  No projects
+<% end %>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <script src = "/scripts/coffee-script.js"></script>
+    <script src = "/scripts/ect.min.js"></script>
+    <script src = "/models/data.js"></script>
+
+    <script>
+      var renderer = ECT({root: "/views"});
+      var html = renderer.render('projects.html.ect', projects1);
+    </script>
+  </head>
+
+  <body></body>
+  <script>
+    document.body.innerHTML = html;
+  </script>
+</html>
