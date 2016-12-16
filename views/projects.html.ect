@@ -2,15 +2,16 @@
   <style>table, th, td {border: 1px solid black;}</style>
   <table style="width:100%">
     <tr>
-      <th>name</th>
-      <th>url</th>
-      <th>description</th>
+    <% for key in Object.keys(@projects1[0]): %>
+    <th><%= key %></th>
+    <% end %>
     </tr>
 <% for project in @projects1: %>
     <tr>
-      <td><%= project.name%></td>
-      <td><%= project.balance%></td>
-      <td><%= project.company%></td>
+      <% for value in Object.values(project): %>
+      <td><%= value %></td>
+      <% end %>
+      </tr>
 <% end %>
   </table>
 <% else: %>
